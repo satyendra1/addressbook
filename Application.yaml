@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: project-k8s
-        image: santyrocker88/addressbook:2.0 
+        image: santyrocker/addressbook:2.0 
         ports:
         - containerPort: 8080  
 
