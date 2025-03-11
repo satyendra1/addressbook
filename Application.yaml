@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: project-k8s
-        image: 192.168.1.200:5000/addressbook:2.0 
+        image: 854512018707.dkr.ecr.ap-south-1.amazonaws.com/privaterepo:address 
         ports:
         - containerPort: 8080  
 
@@ -24,7 +24,7 @@ kind: Service
 metadata:
   name: project-k8s-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: project-k8s
   ports:
